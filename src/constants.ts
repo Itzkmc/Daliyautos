@@ -1,0 +1,111 @@
+import { Car, ReferralLevel } from './types';
+
+export const FEATURED_CARS: Car[] = [
+  {
+    id: '1',
+    name: 'Tesla Model 3',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'EcoDrive Nigeria',
+    type: 'EV',
+    image: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+  {
+    id: '2',
+    name: 'BYD Han',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'DailyAutos Direct',
+    type: 'EV',
+    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+  {
+    id: '3',
+    name: 'Toyota Camry',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'Lagos Motors',
+    type: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+  {
+    id: '4',
+    name: 'Lexus RX 350',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'Premium Wheels',
+    type: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+];
+
+export const ALL_CARS: Car[] = [
+  ...FEATURED_CARS,
+  {
+    id: '5',
+    name: 'Lucid Air',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'Elite Imports',
+    type: 'EV',
+    image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+  {
+    id: '6',
+    name: 'Honda CR-V Hybrid',
+    year: 2024,
+    priceRange: '',
+    dealerName: 'DailyAutos Direct',
+    type: 'Hybrid',
+    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800',
+    isVerified: true,
+  },
+];
+
+export const REFERRAL_LEVELS: ReferralLevel[] = [
+  {
+    name: 'Wood',
+    icon: '🪵',
+    referrals: '0–1',
+    commission: '₦100k',
+    color: 'from-amber-800 to-amber-900',
+    benefits: ['Standard support', 'Basic dashboard access'],
+  },
+  {
+    name: 'Bronze',
+    icon: '🥉',
+    referrals: '2–3',
+    commission: '₦150k–₦200k',
+    color: 'from-orange-700 to-orange-900',
+    benefits: ['Priority support', 'Early access to deals'],
+  },
+  {
+    name: 'Silver',
+    icon: '🥈',
+    referrals: '4–6',
+    commission: '₦200k–₦300k',
+    color: 'from-slate-400 to-slate-600',
+    benefits: ['Dedicated account manager', 'Marketing materials'],
+  },
+  {
+    name: 'Gold',
+    icon: '🥇',
+    referrals: '7–10',
+    commission: '₦300k–₦400k',
+    color: 'from-yellow-400 to-yellow-600',
+    benefits: ['Exclusive events', 'Higher visibility'],
+  },
+  {
+    name: 'Platinum',
+    icon: '💎',
+    referrals: '10+',
+    commission: '₦400k–₦500k+',
+    color: 'from-cyan-400 to-blue-600',
+    benefits: ['VIP treatment', 'Custom referral codes', 'Direct payout'],
+  },
+];
